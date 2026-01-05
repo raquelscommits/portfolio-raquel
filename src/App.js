@@ -288,7 +288,7 @@ export default function Portfolio() {
               <Github size={24} className="text-pink-500 group-hover:scale-110 transition-transform" />
               <span className="text-gray-700">GitHub</span>
             </a>
-            <a href="https://www.linkedin.com/in/raquel-r-1a7545292/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 px-6 py-3 bg-white/70 hover:bg-white border border-pink-200 hover:border-pink-300 rounded-lg transition-all backdrop-blur-sm group">
+            <a href="https://www.linkedin.com/in/raquelrodrim/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 px-6 py-3 bg-white/70 hover:bg-white border border-pink-200 hover:border-pink-300 rounded-lg transition-all backdrop-blur-sm group">
               <Linkedin size={24} className="text-pink-500 group-hover:scale-110 transition-transform" />
               <span className="text-gray-700">LinkedIn</span>
             </a>
