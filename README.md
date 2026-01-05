@@ -1,70 +1,111 @@
-# Getting Started with Create React App
+# 💜 Portfolio - Raquel Rodríguez
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Portfolio personal desarrollado con React y Tailwind CSS, mostrando mis proyectos y habilidades como desarrolladora web frontend.
 
-## Available Scripts
+![Portfolio Preview](https://img.shields.io/badge/Status-Active-success)
+![React](https://img.shields.io/badge/React-18.0+-blue)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4+-purple)
 
-In the project directory, you can run:
+## 🌟 Características
 
-### `npm start`
+- ✨ Diseño moderno con gradientes y animaciones
+- 📱 Totalmente responsive (mobile, tablet, desktop)
+- 🎨 Paleta de colores vibrante (púrpura, rosa, azul)
+- 🖱️ Efectos interactivos y hover
+- 🚀 Navegación suave entre secciones
+- 💫 Fondo animado con efectos de blur
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Tecnologías utilizadas
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **React** - Framework de JavaScript
+- **Tailwind CSS** - Framework de estilos
+- **Lucide React** - Librería de iconos
+- **HTML5 & CSS3**
+- **JavaScript ES6+**
 
-### `npm test`
+## 📋 Secciones
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. **Inicio** - Presentación principal con call-to-action
+2. **Sobre mí** - Información personal y profesional
+3. **Proyectos** - Muestra de trabajos realizados
+4. **Habilidades** - Skills técnicos con barras de progreso
+5. **Contacto** - Información de contacto y redes sociales
 
-### `npm run build`
+## 🚀 Instalación y uso
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerrequisitos
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (v14 o superior)
+- npm o yarn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Pasos para ejecutar localmente
 
-### `npm run eject`
+1. Clona el repositorio
+```bash
+git clone https://github.com/TU-USUARIO/portfolio-raquel.git
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Entra a la carpeta del proyecto
+```bash
+cd portfolio-raquel
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Instala las dependencias
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Ejecuta el proyecto en modo desarrollo
+```bash
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. Abre tu navegador en `http://localhost:3000`
 
-## Learn More
+## 📦 Build para producción
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para crear una versión optimizada para producción:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run build
+```
 
-### Code Splitting
+Los archivos se generarán en la carpeta `build/`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🎨 Personalización
 
-### Analyzing the Bundle Size
+Para personalizar el portfolio con tu información:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. **Datos personales**: Edita las secciones en `src/App.js`
+2. **Proyectos**: Modifica el array `projects` con tus proyectos
+3. **Habilidades**: Actualiza el array `skills` con tus tecnologías
+4. **Colores**: Ajusta los gradientes en las clases de Tailwind
+5. **Enlaces**: Cambia los enlaces de GitHub, LinkedIn y email
 
-### Making a Progressive Web App
+## 📱 Capturas de pantalla
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Vista Desktop
+*Sección Hero con gradientes animados*
 
-### Advanced Configuration
+### Vista Mobile
+*Diseño totalmente responsive*
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 👩‍💻 Sobre mí
 
-### Deployment
+Desarrolladora web recién graduada del Grado Superior de Desarrollo Web, especializada en frontend. Apasionada por crear experiencias web modernas y funcionales.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## 📫 Contacto
 
-### `npm run build` fails to minify
+- **Email**: raquelrodrim2000@gmail.com
+- **LinkedIn**: [linkedin.com/in/raquel-r-1a7545292/](https://www.linkedin.com/in/raquel-r-1a7545292/)
+- **GitHub**: [github.com/raquelscommits](https://github.com/raquelscommits)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 📄 Licencia
+
+Este proyecto es de uso personal. Siéntete libre de usar el código como inspiración para tu propio portfolio.
+
+---
+
+⭐ Si te gustó este proyecto, ¡dale una estrella en GitHub!
+
+Hecho con 💜 por Raquel Rodríguez
