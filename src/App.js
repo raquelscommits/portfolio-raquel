@@ -24,23 +24,24 @@ export default function Portfolio() {
 
   const projects = [
     {
+      title: "JESMAIMEDIA",
+      description: "Plataforma de venta de productos digitales descargables (plantillas, prompts, packs de contenido y mini-cursos)",
+      tech: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Vercel"],
+      color: "from-purple-200 to-green-200",
+      link: "https://jesmaimedia.vercel.app/"
+    },
+    {
       title: "Dashboard Analytics",
       description: "Panel interactivo con visualización de datos en tiempo real y gráficos dinámicos.",
       tech: ["React", "Tailwind CSS", "Chart.js"],
       color: "from-pink-300 to-rose-300"
     },
     {
-      title: "E-commerce Landing",
-      description: "Página de aterrizaje moderna para tienda online con animaciones suaves y diseño responsivo.",
-      tech: ["HTML", "CSS", "JavaScript"],
-      color: "from-blue-200 to-indigo-200"
-    },
-    {
       title: "Task Management App",
       description: "Aplicación de gestión de tareas con filtros, categorías y persistencia de datos.",
       tech: ["React", "Bootstrap", "LocalStorage"],
       color: "from-purple-200 to-pink-200"
-    }
+    },
   ];
 
   const skills = [
@@ -81,7 +82,7 @@ export default function Portfolio() {
       <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white/80 backdrop-blur-lg shadow-lg py-4' : 'bg-transparent py-6'}`}>
         <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
           <h1 className="text-2xl font-bold bg-gradient-to-r from-pink-400 to-rose-400 bg-clip-text text-transparent">RR</h1>
-          
+
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-8">
             {['inicio', 'sobre-mi', 'proyectos', 'habilidades', 'contacto'].map((section) => (
@@ -89,8 +90,8 @@ export default function Portfolio() {
                 key={section}
                 onClick={() => scrollToSection(section)}
                 className={`capitalize transition-all ${
-                  activeSection === section 
-                    ? 'text-pink-500 font-medium' 
+                  activeSection === section
+                    ? 'text-pink-500 font-medium'
                     : 'text-gray-600 hover:text-pink-400'
                 }`}
               >
@@ -237,9 +238,21 @@ export default function Portfolio() {
                       </span>
                     ))}
                   </div>
-                  <button className="flex items-center gap-2 text-pink-500 hover:text-rose-500 transition-colors group">
-                    Ver proyecto <ExternalLink size={16} className="group-hover:translate-x-1 transition-transform" />
-                  </button>
+                {project.link ? (
+                  <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-pink-500 hover:text-rose-500 transition-colors group"
+                  >
+                    Ver proyecto
+                    <ExternalLink size={16} className="group-hover:translate-x-1 transition-transform" />
+                  </a>
+                ) : (
+                  <span className="flex items-center gap-2 text-gray-400 cursor-not-allowed">
+                    Próximamente
+                  </span>
+                )}
                 </div>
               </div>
             ))}
