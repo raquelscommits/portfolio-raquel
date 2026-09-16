@@ -31,9 +31,9 @@ export default function Portfolio() {
       link: "https://jesmaimedia.vercel.app/"
     },
     {
-      title: "Dashboard Analytics",
-      description: "Panel interactivo con visualización de datos en tiempo real y gráficos dinámicos.",
-      tech: ["React", "Tailwind CSS", "Chart.js"],
+      title: "Carda Servicios",
+      description: "Página web moderna para la empresa Carda.",
+      tech: ["HTML5", "CSS3", "JavaScript"],
       color: "from-pink-300 to-rose-300"
     },
     {
