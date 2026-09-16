@@ -34,7 +34,8 @@ export default function Portfolio() {
       title: "Carda Servicios",
       description: "Página web moderna para la empresa Carda.",
       tech: ["HTML5", "CSS3", "JavaScript"],
-      color: "from-pink-300 to-rose-300"
+      color: "from-pink-300 to-rose-300",
+      link: "https://cardaservicios.es/"
     },
     {
       title: "Task Management App",
