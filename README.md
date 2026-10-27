@@ -42,7 +42,7 @@ Portfolio personal desarrollado con React y Tailwind CSS, mostrando mis proyecto
 
 1. Clona el repositorio
 ```bash
-git clone https://github.com/TU-USUARIO/portfolio-raquel.git
+git clone https://github.com/raquelscommits/portfolio-raquel.git
 ```
 
 2. Entra a la carpeta del proyecto
@@ -97,7 +97,7 @@ Desarrolladora web recién graduada del Grado Superior de Desarrollo Web, especi
 ## 📫 Contacto
 
 - **Email**: raquelrodrim2000@gmail.com
-- **LinkedIn**: [linkedin.com/in/raquel-r-1a7545292/](https://www.linkedin.com/in/raquel-r-1a7545292/)
+- **LinkedIn**: [linkedin.com/in/raquelrodrim](https://www.linkedin.com/in/raquelrodrim/)
 - **GitHub**: [github.com/raquelscommits](https://github.com/raquelscommits)
 
 ## 📄 Licencia

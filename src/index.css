@@ -1,3 +1,181 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+  }
+
+  /* Desplazamiento suave solo si la persona no ha pedido reducir el movimiento */
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    @apply bg-paper font-sans text-ink antialiased;
+    font-feature-settings: 'ss01';
+  }
+
+  ::selection {
+    @apply bg-blush text-ink;
+  }
+
+  /* Ajuste óptico de Fraunces: más contraste en los tamaños grandes */
+  .font-display {
+    font-optical-sizing: auto;
+  }
+
+  /* Evita que la barra fija tape el título de cada sección al navegar con anclas */
+  section[id] {
+    scroll-margin-top: 4rem;
+  }
+
+  /* Foco visible y consistente para teclado */
+  :focus-visible {
+    outline: 2px solid theme('colors.accent.DEFAULT');
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .bg-ink :focus-visible {
+    outline-color: theme('colors.accent.light');
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  /* Enlace "Saltar al contenido": invisible hasta recibir el foco con el teclado */
+  .skip-link {
+    @apply absolute left-4 top-4 z-[60] -translate-y-24 rounded-md bg-ink px-4 py-2 font-medium text-paper;
+  }
+
+  .skip-link:focus {
+    @apply translate-y-0;
+  }
+
+  .section {
+    @apply px-5 py-20 sm:px-8 sm:py-28 lg:py-32;
+  }
+
+  .prose-body {
+    @apply text-lg leading-relaxed text-ink-soft;
+  }
+
+  .prose-body strong {
+    @apply font-semibold text-ink;
+  }
+
+  /* Subrayado de marcador: el rosa como gesto de "esto es lo importante" */
+  .marker {
+    @apply text-ink;
+    background: linear-gradient(to top, theme('colors.blush') 0.42em, transparent 0.42em);
+    padding: 0 0.08em;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+  }
+
+  /* Navegación de escritorio: subrayado que crece al pasar o en la sección activa */
+  .nav-link {
+    @apply relative py-2 text-[0.95rem] text-ink-soft transition-colors hover:text-ink;
+  }
+
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-accent transition-transform duration-300;
+  }
+
+  .nav-link:hover::after,
+  .nav-link.is-active::after {
+    @apply scale-x-100;
+  }
+
+  .nav-link.is-active {
+    @apply text-ink;
+  }
+
+  /* Botón principal */
+  .btn-primary {
+    @apply inline-flex min-h-[3rem] items-center gap-3 rounded-md bg-accent px-6 py-3 text-lg font-medium text-white transition-colors hover:bg-accent-deep;
+  }
+
+  .btn-arrow {
+    @apply transition-transform duration-300;
+  }
+
+  .btn-primary:hover .btn-arrow {
+    @apply translate-x-1;
+  }
+
+  /* Enlace de texto con subrayado propio */
+  .text-link {
+    @apply inline-flex min-h-[3rem] items-center font-medium text-ink underline decoration-accent decoration-2 underline-offset-[6px] transition-colors hover:text-accent-deep;
+  }
+
+  /* Proyectos: filas editoriales; todo el bloque es clicable */
+  .project-row {
+    @apply relative grid gap-4 border-b border-line py-10 transition-colors sm:py-12 lg:grid-cols-12 lg:items-start lg:gap-8;
+  }
+
+  .project-link::after {
+    content: '';
+    @apply absolute inset-0;
+  }
+
+  .project-link {
+    @apply transition-colors group-hover:text-accent;
+  }
+
+  .project-row:has(.project-link:focus-visible) {
+    @apply outline outline-2 outline-offset-4 outline-accent;
+  }
+
+  .project-link:focus-visible {
+    outline: none;
+  }
+
+  .project-arrow {
+    @apply transition-transform duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-accent;
+  }
+
+  /* Tecnologías como teclas */
+  .key {
+    @apply inline-block rounded-md border border-line bg-white px-3 py-1.5 font-mono text-sm text-ink transition-transform duration-150;
+    border-bottom-width: 3px;
+    border-bottom-color: theme('colors.blush');
+  }
+
+  .key-sm {
+    @apply px-2.5 py-1 text-xs;
+  }
+
+  .key:hover {
+    @apply translate-y-px;
+    border-bottom-width: 2px;
+    margin-bottom: 1px;
+  }
+
+  /* Contacto */
+  .contact-email {
+    @apply inline-block break-all font-display text-2xl text-paper underline decoration-accent-light decoration-1 underline-offset-8 transition-colors hover:text-accent-light sm:text-4xl;
+  }
+
+  .contact-row {
+    @apply flex min-h-[3.5rem] items-center justify-between gap-4 py-3 text-paper transition-colors hover:text-accent-light;
+  }
+
+  .contact-row-arrow {
+    @apply transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5;
+  }
+}

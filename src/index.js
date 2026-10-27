@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import '@fontsource-variable/fraunces/opsz.css';
+import '@fontsource-variable/fraunces/opsz-italic.css';
+import '@fontsource-variable/instrument-sans';
+import '@fontsource/jetbrains-mono/400.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
