@@ -5,9 +5,9 @@ import TechKeys from './TechKeys';
 
 export default function Skills() {
   return (
-    <section id="habilidades" aria-labelledby="habilidades-title" className="section bg-paper-deep">
+    <section id="habilidades" aria-labelledby="habilidades-title" className="section">
       <div className="mx-auto max-w-page">
-        <SectionHeading number="04" label="Habilidades" title="Con qué trabajo" id="habilidades-title" />
+        <SectionHeading number="05" label="Habilidades" title="Con qué trabajo" id="habilidades-title" />
 
         <div className="grid gap-10 border-t border-ink pt-10 md:grid-cols-3 md:gap-8">
           {skillGroups.map((group) => (

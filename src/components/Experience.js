@@ -4,10 +4,10 @@ import SectionHeading from './SectionHeading';
 
 export default function Experience() {
   return (
-    <section id="trayectoria" aria-labelledby="trayectoria-title" className="section">
+    <section id="trayectoria" aria-labelledby="trayectoria-title" className="section bg-paper-deep">
       <div className="mx-auto grid max-w-page gap-x-8 lg:grid-cols-12">
         <div className="lg:col-span-4">
-          <SectionHeading number="03" label="Trayectoria" title="Experiencia y formación" id="trayectoria-title" />
+          <SectionHeading number="04" label="Trayectoria" title="Experiencia y formación" id="trayectoria-title" />
         </div>
 
         <ol className="border-t border-ink lg:col-span-8">

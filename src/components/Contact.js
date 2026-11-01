@@ -7,7 +7,7 @@ export default function Contact() {
   return (
     <section id="contacto" aria-labelledby="contacto-title" className="section bg-ink text-paper">
       <div className="mx-auto max-w-page">
-        <SectionHeading number="05" label="Contacto" tone="dark" />
+        <SectionHeading number="06" label="Contacto" tone="dark" />
 
         <h2 id="contacto-title" className="font-display text-closing font-medium text-paper">
           ¿Trabajamos
