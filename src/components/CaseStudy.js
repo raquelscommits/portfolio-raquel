@@ -32,7 +32,7 @@ function Screenshots({ images }) {
 }
 
 export default function CaseStudy() {
-  const { title, intro, facts, tech, workflow, highlights, challenge, learnings, note } = miivoCase;
+  const { title, intro, facts, tech, workflow, highlights, challenge, learnings, reflection, note } = miivoCase;
 
   return (
     <section id="miivo" aria-labelledby="miivo-title" className="section">
@@ -105,6 +105,9 @@ export default function CaseStudy() {
                 </li>
               ))}
             </ul>
+            <blockquote className="mt-8 border-l-2 border-accent pl-6 font-display text-xl leading-snug text-ink sm:text-2xl sm:leading-snug">
+              <p>{reflection}</p>
+            </blockquote>
           </div>
         </div>
 

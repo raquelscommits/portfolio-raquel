@@ -139,9 +139,9 @@ export const miivoCase = {
   learnings: [
     'Diseño responsive con Tailwind: empecé consultando la documentación a cada paso y terminé maquetando con soltura.',
     'Proponer ideas: el contador y la sección de la API salieron de mí y se quedaron en producción.',
-    'Trabajar en equipo con tareas, ramas, pull requests y despliegue continuo.',
-    'Qué mejoraría: textos alternativos en todas las imágenes, pantallas muy grandes (2K) y una rama develop para detectar errores antes de llegar a producción.',
-  ],
+    'Trabajar en equipo con tareas, ramas, pull requests y despliegue continuo.',],
+  reflection:
+    'Miivo fue mi primera experiencia en un proyecto real: un equipo, usuarios de verdad y código en producción. Hoy sé mucho más que entonces y, al volver a ver estas páginas, sé que podría mejorar mucho su diseño y su código. Para mí es la mejor prueba de todo lo que he crecido desde entonces.',
   note: 'Miivo cerró y el código de la web está en un repositorio privado. Si quieres verlo, escríbeme y te doy acceso.',
 };
 
