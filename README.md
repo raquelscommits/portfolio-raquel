@@ -1,42 +1,57 @@
 # 💜 Portfolio - Raquel Rodríguez
 
-Portfolio personal desarrollado con React y Tailwind CSS, mostrando mis proyectos y habilidades como desarrolladora web frontend.
+Portfolio personal desarrollado con React y Tailwind CSS, mostrando mis proyectos, mi experiencia y mis habilidades como desarrolladora web frontend.
 
-![Portfolio Preview](https://img.shields.io/badge/Status-Active-success)
-![React](https://img.shields.io/badge/React-18.0+-blue)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4+-purple)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![React](https://img.shields.io/badge/React-19-blue)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-purple)
 
 ## 🌟 Características
 
-- ✨ Diseño moderno con gradientes y animaciones
-- 📱 Totalmente responsive (mobile, tablet, desktop)
-- 🎨 Paleta de colores vibrante (púrpura, rosa, azul)
-- 🖱️ Efectos interactivos y hover
-- 🚀 Navegación suave entre secciones
-- 💫 Fondo animado con efectos de blur
+- ✍️ Diseño editorial: tipografía serif (Fraunces) para los títulos, Instrument Sans para el texto y JetBrains Mono para los detalles
+- 🎨 Paleta propia en tonos rosa y ciruela, definida en `tailwind.config.js`
+- 📱 Totalmente responsive (mobile, tablet, desktop) con menú móvil
+- 🧭 Navegación fija que marca la sección en la que estás
+- 📂 Caso de estudio de mis prácticas en Miivo, con capturas reales de escritorio y móvil
+- ♿ Accesible: enlace «Saltar al contenido», foco visible con teclado, textos alternativos y respeto a la preferencia de reducir movimiento
 
 ## 🛠️ Tecnologías utilizadas
 
-- **React** - Framework de JavaScript
+- **React 19** - Librería de interfaces
 - **Tailwind CSS** - Framework de estilos
 - **Lucide React** - Librería de iconos
-- **HTML5 & CSS3**
-- **JavaScript ES6+**
+- **Fontsource** - Fuentes autoalojadas
+- **Create React App** - Entorno de desarrollo y build
 
 ## 📋 Secciones
 
-1. **Inicio** - Presentación principal con call-to-action
+1. **Inicio** - Presentación y datos principales
 2. **Sobre mí** - Información personal y profesional
-3. **Proyectos** - Muestra de trabajos realizados
-4. **Habilidades** - Skills técnicos con barras de progreso
-5. **Contacto** - Información de contacto y redes sociales
+3. **Proyectos** - Webs publicadas
+4. **Caso de estudio: Miivo** - Lo que hice en mis prácticas: páginas, secciones, retos y aprendizajes
+5. **Trayectoria** - Experiencia y formación
+6. **Habilidades** - Tecnologías con las que trabajo
+7. **Contacto** - Email, solicitud de CV y LinkedIn
+
+## 📂 Caso de estudio: Miivo
+
+Durante mis prácticas en [Miivo](https://miivomobility.com), una startup valenciana de movilidad sostenible, desarrollé parte de su web con Next.js, React, TypeScript y Tailwind CSS. En el portfolio cuento cuatro piezas con su reto, proceso y resultado:
+
+- **Página de Sostenibilidad**, con un contador animado de CO₂ reducido
+- **Sección «Miivo en datos»** en la portada
+- **Carrusel de medios de transporte**
+- **Página de la API**, incluida una sección que propuse yo
+
+![Caso de estudio de Miivo en el portfolio](docs/captura-caso-miivo.jpg)
+
+> Miivo cerró y el código de su web está en un repositorio privado. Si quieres verlo, escríbeme y te doy acceso.
 
 ## 🚀 Instalación y uso
 
 ### Prerrequisitos
 
-- Node.js (v14 o superior)
-- npm o yarn
+- Node.js (v18 o superior)
+- npm
 
 ### Pasos para ejecutar localmente
 
@@ -74,25 +89,27 @@ Los archivos se generarán en la carpeta `build/`
 
 ## 🎨 Personalización
 
-Para personalizar el portfolio con tu información:
+Todo el contenido está en un solo archivo: `src/data/content.js`.
 
-1. **Datos personales**: Edita las secciones en `src/App.js`
-2. **Proyectos**: Modifica el array `projects` con tus proyectos
-3. **Habilidades**: Actualiza el array `skills` con tus tecnologías
-4. **Colores**: Ajusta los gradientes en las clases de Tailwind
-5. **Enlaces**: Cambia los enlaces de GitHub, LinkedIn y email
+1. **Datos personales**: `person` y `facts`
+2. **Proyectos**: el array `projects` (cada proyecto admite una imagen opcional)
+3. **Caso de estudio**: el objeto `miivoCase`; las capturas están en `public/images/miivo/`
+4. **Trayectoria**: el array `experience`
+5. **Habilidades**: el array `skillGroups`
+6. **Enlaces**: el array `links`
+7. **Colores y tipografías**: `tailwind.config.js`
 
 ## 📱 Capturas de pantalla
 
 ### Vista Desktop
-*Sección Hero con gradientes animados*
+![Portada en escritorio](docs/captura-escritorio.jpg)
 
 ### Vista Mobile
-*Diseño totalmente responsive*
+<img src="docs/captura-movil.jpg" alt="Portada en móvil" width="320">
 
 ## 👩‍💻 Sobre mí
 
-Desarrolladora web recién graduada del Grado Superior de Desarrollo Web, especializada en frontend. Apasionada por crear experiencias web modernas y funcionales.
+Desarrolladora web graduada en el Grado Superior de Desarrollo Web, especializada en frontend. Apasionada por crear experiencias web modernas y funcionales.
 
 ## 📫 Contacto
 
