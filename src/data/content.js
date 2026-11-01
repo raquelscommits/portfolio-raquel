@@ -148,16 +148,15 @@ export const miivoCase = {
 export const experience = [
   {
     kind: 'Trabajo',
-    title: 'Desarrolladora frontend (prácticas)',
+    title: 'Desarrollo web',
     place: 'Miivo Mobility',
     placeNote: 'startup',
-    date: 'Sept – dic 2023',
     tasks: [
-      'Creación de las páginas de Sostenibilidad y de la API',
-      'Nuevas secciones en la portada: «Miivo en datos» y carrusel de transportes',
-      'Diseño responsive con Tailwind CSS',
-      'Traducciones de la web en español, valenciano e inglés',
-      'Corrección de errores y documentación técnica',
+      'Mejora del diseño web',
+      'Implementación de responsive design',
+      'Corrección de errores',
+      'Creación de nuevas secciones para hacer la página más atractiva',
+      'Elaboración y actualización de documentación técnica',
     ],
   },
     {
