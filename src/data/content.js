@@ -141,7 +141,7 @@ export const miivoCase = {
     'Proponer ideas: el contador y la sección de la API salieron de mí y se quedaron en producción.',
     'Trabajar en equipo con tareas, ramas, pull requests y despliegue continuo.',],
   reflection:
-    'Miivo fue mi primera experiencia en un proyecto real: un equipo, usuarios de verdad y código en producción. Hoy sé mucho más que entonces y, al volver a ver estas páginas, sé que podría mejorar mucho su diseño y su código. Para mí es la mejor prueba de todo lo que he crecido desde entonces.',
+    'Miivo fue mi primera experiencia en un proyecto real: un equipo, usuarios de verdad y código en producción. Cumplí con todo lo que se me pidió y el equipo quedó satisfecho con mi trabajo. Hoy sé mucho más que entonces y, al volver a ver estas páginas, sé que podría mejorar mucho su diseño y su código. Aprendí muchísimo en esos meses y estoy orgullosa de todo lo que he crecido desde entonces.',
   note: 'Miivo cerró y el código de la web está en un repositorio privado. Si quieres verlo, escríbeme y te doy acceso.',
 };
 
