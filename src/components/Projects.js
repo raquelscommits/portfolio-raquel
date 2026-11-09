@@ -10,7 +10,7 @@ export default function Projects() {
   return (
     <section id="proyectos" aria-labelledby="proyectos-title" className="section bg-paper-deep">
       <div className="mx-auto max-w-page">
-        <SectionHeading number="02" label="Proyectos" title="Webs publicadas" id="proyectos-title" />
+        <SectionHeading number="02" label="Proyectos" title="Webs y apps" id="proyectos-title" />
 
         <ol className="border-t border-ink">
           {projects.map((project, index) => (
@@ -32,6 +32,9 @@ export default function Projects() {
                   </a>
                 </h3>
                 <p className="mt-2 font-mono text-sm text-accent-deep">{domainOf(project.link)}</p>
+                {project.status && (
+                  <p className="mt-1 font-mono text-sm text-ink-soft">{project.status}</p>
+                )}
                 {project.image && (
                   <img
                     src={project.image.src}
@@ -45,6 +48,9 @@ export default function Projects() {
               <div className="lg:col-span-4">
                 <p className="text-lg leading-relaxed text-ink-soft">{project.description}</p>
                 <TechKeys items={project.tech} className="mt-5" small />
+                {project.note && (
+                  <p className="mt-5 text-sm leading-relaxed text-ink-soft">{project.note}</p>
+                )}
               </div>
 
               <ArrowUpRight

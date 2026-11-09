@@ -27,7 +27,7 @@ Portfolio personal desarrollado con React y Tailwind CSS, mostrando mis proyecto
 
 1. **Inicio** - Presentación y datos principales
 2. **Sobre mí** - Información personal y profesional
-3. **Proyectos** - Webs publicadas
+3. **Proyectos** - Webs y apps, empezando por KIRA (app Android y su web)
 4. **Caso de estudio: Miivo** - Lo que hice en mis prácticas: páginas, secciones, retos y aprendizajes
 5. **Trayectoria** - Experiencia y formación
 6. **Habilidades** - Tecnologías con las que trabajo
@@ -92,7 +92,7 @@ Los archivos se generarán en la carpeta `build/`
 Todo el contenido está en un solo archivo: `src/data/content.js`.
 
 1. **Datos personales**: `person` y `facts`
-2. **Proyectos**: el array `projects` (cada proyecto admite una imagen opcional)
+2. **Proyectos**: el array `projects` (cada proyecto admite una imagen, un estado y una nota opcionales)
 3. **Caso de estudio**: el objeto `miivoCase`; las capturas están en `public/images/miivo/`
 4. **Trayectoria**: el array `experience`
 5. **Habilidades**: el array `skillGroups`

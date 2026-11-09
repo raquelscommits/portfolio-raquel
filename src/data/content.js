@@ -30,7 +30,21 @@ export const facts = [
 ];
 
 // `image` es opcional: cuando haya capturas, añade { src, alt } y la tarjeta las mostrará.
+// `status` y `note` también son opcionales: estado del proyecto y una aclaración bajo las tecnologías.
 export const projects = [
+  {
+    title: 'KIRA',
+    description:
+      'App Android de cuidados, educación y organización para perros de cualquier raza: salidas, comidas, salud y peso, tareas con avisos, fichas de adiestramiento y una guía para propietarios. Funciona sin conexión y sin cuentas. La acompaña una web propia para presentarla y buscar testers para la prueba cerrada.',
+    tech: ['React Native', 'Expo', 'TypeScript', 'SQLite', 'Astro', 'Vercel'],
+    link: 'https://appkira.es/',
+    status: 'App en desarrollo · aún no está en Google Play',
+    note: 'El código de la app y de la web está en repositorios privados. Si quieres verlo, escríbeme y te doy acceso.',
+    image: {
+      src: '/images/kira/kira-web.jpg',
+      alt: 'Portada de la web de KIRA: titular «Tu perro, su día y todo lo que toca» junto a un móvil con la pantalla Hoy de la app.',
+    },
+  },
   {
     title: 'JESMAIMEDIA',
     description:
@@ -186,7 +200,7 @@ export const experience = [
 export const skillGroups = [
   { title: 'Base', items: ['HTML5', 'CSS3', 'JavaScript'] },
   { title: 'Librerías y frameworks', items: ['React', 'Tailwind CSS', 'Bootstrap'] },
-  { title: 'También en mis proyectos', items: ['Next.js', 'TypeScript', 'Vercel', 'Git', 'Figma'] },
+  { title: 'También en mis proyectos', items: ['Next.js', 'TypeScript', 'React Native', 'Expo', 'Astro', 'Vercel', 'Git', 'Figma'] },
 ];
 
 export const links = [
